@@ -8,7 +8,22 @@
 module.exports = {
 
   attributes: {
-
+    name: {
+      type: 'string',
+      required: true
+    },
+    description: {
+      type: 'string',
+      required: true
+    },
+    // [lng, lat]
+    location: {
+      type: 'json',
+    },
+    refuels: {
+      collection: 'refuel',
+      via: 'gasStation'
+    }
   }
 };
 

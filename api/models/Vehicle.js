@@ -8,7 +8,14 @@
 module.exports = {
 
   attributes: {
-
+    name: {
+      type: 'string',
+      required: true
+    },
+    refuels: {
+      collection: 'refuel',
+      via: 'vehicle'
+    }
   }
 };
 
